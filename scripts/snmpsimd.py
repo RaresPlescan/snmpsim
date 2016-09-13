@@ -1127,7 +1127,7 @@ if v2cArch:
         transportDomain = udp6.domainName + (transportIndex,)
         transportIndex += 1
         transportDispatcher.registerTransport(
-                transportDomain, agentUDPv4Endpoint[0]
+                transportDomain, agentUDPv6Endpoint[0]
         )
         log.msg('Listening at UDP/IPv6 endpoint %s, transport ID %s' % (agentUDPv4Endpoint[1], '.'.join([str(x) for x in transportDomain])))
 
