@@ -1129,7 +1129,7 @@ if v2cArch:
         transportDispatcher.registerTransport(
                 transportDomain, agentUDPv4Endpoint[0]
         )
-        log.msg('Listening at UDP/IPv6 endpoint %s, transport ID %s' % (agentUDPv4Endpoint[1], '.'.join([str(x) for x in transportDomain])))
+        log.msg('Listening at UDP/IPv6 endpoint %s, transport ID %s' % (agentUDPv6Endpoint[1], '.'.join([str(x) for x in transportDomain])))
 
     transportIndex = transportIdOffset
     for agentUnixEndpoint in agentUnixEndpoints:
